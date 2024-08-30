@@ -1,0 +1,27 @@
+.total-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .chart-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-top: 100px;
+  }
+  
+  .chart-title {
+    text-align: center;
+    color: #333;
+  }
+  
+  .loading-message, .error-message {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+  }
+  

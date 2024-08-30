@@ -1,0 +1,110 @@
+/* Home.css */
+body {
+  background-image: url('bg.jpeg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0; /* Remove default body margin */
+}
+.fullcontainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectgrid {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  justify-content: space-around; /* Adjust spacing between cards */
+}
+
+.project-grid {
+  margin-top: 20px;
+}
+
+.buttongroup {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+  flex-direction: column;
+  justify-content: center;
+}
+.buttongroup:hover{
+  color: blue;
+}
+
+.cardpadding {
+  margin: 12px;
+  margin-top: 12px;
+  margin-bottom: 50px;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-color: gold;
+}
+
+.card-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+/* TextCard.css */
+
+/* Add this styling to your CSS file */
+.text-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f4f4f4; /* Add your preferred background color */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-left: 50px;
+  color: black;
+}
+
+.text-container p {
+  margin: 0;
+  margin-left: 50px;
+  color: black; /* Remove default margin */
+}
+
+
+/* Media queries for responsiveness */
+
+@media (max-width: 992px) {
+  .projectgrid {
+    justify-content: center; /* Center cards on smaller screens */
+  }
+
+  .card {
+    width: 45%; /* Adjust width as needed */
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%; /* Occupy full width on mobile */
+  }
+}
